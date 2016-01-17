@@ -1,5 +1,5 @@
 #include "AppDelegate.h"
-#include "GameLayer.h"
+#include "TitleLayer.h"
 
 USING_NS_CC;
 
@@ -39,14 +39,14 @@ bool AppDelegate::applicationDidFinishLaunching() {
     }
 
     // turn on display FPS
-    director->setDisplayStats(true);
+    //director->setDisplayStats(true);
 
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0 / 60);
     
     glview->setDesignResolutionSize(640, 1136, ResolutionPolicy::FIXED_WIDTH);
     
-    auto scene = GameLayer::createScene();
+    auto scene = TitleLayer::createScene();
     director->runWithScene(scene);
 
     return true;

@@ -59,6 +59,8 @@
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
+		E4079A9A1B67F24C0097408A /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = E4079A991B67F24C0097408A /* title.png */; };
+		E48685D61B66A47A006F5F83 /* TitleLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E48685D41B66A47A006F5F83 /* TitleLayer.cpp */; };
 		E4889AB31B5424BB00D6DC81 /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4889AB11B5424BB00D6DC81 /* GameLayer.cpp */; };
 		E4889AB51B542F5300D6DC81 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = E4889AB41B542F5300D6DC81 /* background.png */; };
 		E4889AB81B54322500D6DC81 /* GridSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4889AB61B54322500D6DC81 /* GridSprite.cpp */; };
@@ -151,6 +153,9 @@
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D6B0611A1803AB670077942B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		E4079A991B67F24C0097408A /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+		E48685D41B66A47A006F5F83 /* TitleLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TitleLayer.cpp; sourceTree = "<group>"; };
+		E48685D51B66A47A006F5F83 /* TitleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleLayer.h; sourceTree = "<group>"; };
 		E4889AB11B5424BB00D6DC81 /* GameLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameLayer.cpp; sourceTree = "<group>"; };
 		E4889AB21B5424BB00D6DC81 /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
 		E4889AB41B542F5300D6DC81 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
@@ -275,6 +280,7 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E4079A991B67F24C0097408A /* title.png */,
 				E4F340381B5CE35900B13F0E /* Dark.png */,
 				E4F340361B5CE35000B13F0E /* Light.png */,
 				E4889AB41B542F5300D6DC81 /* background.png */,
@@ -294,6 +300,8 @@
 				E4889AB21B5424BB00D6DC81 /* GameLayer.h */,
 				E4889AB61B54322500D6DC81 /* GridSprite.cpp */,
 				E4889AB71B54322500D6DC81 /* GridSprite.h */,
+				E48685D41B66A47A006F5F83 /* TitleLayer.cpp */,
+				E48685D51B66A47A006F5F83 /* TitleLayer.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -460,6 +468,7 @@
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
+				E4079A9A1B67F24C0097408A /* title.png in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				3EACC98F19EE6D4300EB3C5E /* res in Resources */,
@@ -494,6 +503,7 @@
 				E4889AB81B54322500D6DC81 /* GridSprite.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				E48685D61B66A47A006F5F83 /* TitleLayer.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
